@@ -1,0 +1,232 @@
+#containers{
+   
+    border-radius: 6px;
+    display: grid;
+    gap: 15px;
+    margin-top: 30px;
+    margin-left: 300px;
+    margin-right: 300px;
+    height: 1700px;
+    width: 1300px;
+    min-height: 100vh;
+
+   
+
+    grid-template-areas: "container1 container1 container1 container2"
+                         "container1 container1 container1 container3"
+                         "container4 container5 container6 container6"
+                         "container7 container7 container8 container9"
+                         "container10 container11 container12 container12"
+                         "container13 container14 container14 container15";
+                         
+}
+
+.container1 {
+    
+    border: 2px solid rgb(151, 16, 204);
+    grid-area: container1;
+    
+}
+
+.container2 {
+    
+    background: gray;
+    border: 2px solid rgb(151, 16, 204);
+    grid-area: container2;
+    border-color: aqua;
+    
+}
+
+.container3 {
+    background: blue;
+    border: 2px solid blue;
+    grid-area: container3;
+    
+}
+
+body{
+    background-color: #f8f8f8;
+}
+
+#container {
+    background-color: rgb(240, 240, 240);
+    text-align: center;
+    position: relative;
+    width: 80px;
+    height: 40px;
+    box-shadow: inset 4px 4px 6px #cecece,
+                inset -4px -4px 6px #ffffff;
+    margin: auto auto;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.toggle {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    transform: scale(.7);
+    background-color: linear-gradient(145deg, #d8d8d8, #ffffff);
+    border-radius: 25px;
+    box-shadow: 3px 3px 8px #c4c4c4,
+                -3px -3px 8px #ffffff;
+} 
+
+#container.active .toggle {
+    left: 40px;
+}
+
+body.active {
+    background-color: black;
+}
+
+.container4 {
+    background: blue;
+    border: 2px solid blue;
+    grid-area: container4;
+    
+    
+}
+.container5 {
+    background: blue;
+    background: blue;
+    border: 2px solid blue;
+    
+    grid-area: container5;
+}
+.container6 {
+
+    border: 2px solid rgb(217, 255, 1);
+    grid-area: container6;
+    background: url(/imagenes/map.png);
+   
+}
+.container7 {
+    background: rgb(73, 73, 165);
+    border: 2px solid blue;
+    grid-area: container7;
+    
+   
+}
+.container8 {
+    background: blue;
+    background: blue;
+    border: 2px solid blue;
+    grid-area: container8;
+}
+.container9 {
+    background: blue;
+    background: blue;
+    border: 2px solid blue;
+    grid-area: container9;
+}
+.container10 {
+    background: blue;
+    background: blue;
+    border: 2px solid blue;
+    grid-area: container10;
+  
+}
+.container11 {
+    background: blue;
+    background: blue;
+    border: 2px solid blue;
+    grid-area: container11;
+}
+.container12 {
+    background: blue;
+    background: blue;
+    border: 2px solid blue;
+    grid-area: container12;
+}
+.container13 {
+    background: blue;
+    background: blue;
+    border: 2px solid blue;
+    grid-area: container13;
+}
+.container14 {
+    background: blue;
+    background: blue;
+    border: 2px solid blue;
+    grid-area: container14;
+   
+}
+.container15 {
+    background: blue;
+    background: blue;
+    border: 2px solid blue;
+    grid-area: container15;
+}
+
+.map {
+    border-radius: 12px;
+    
+}
+
+
+@media screen and (width < 1600px){
+    #containers {
+        grid-template-areas: "container1 container1 container1"
+                             "container1 container1 container1"
+                             "container2 container3 container4"
+                             "container5 container6 container6"
+                             "container7 container7 container8"
+                             "container9 container10 container11"
+                             "container12 container12 container13"
+                             "container15 container14 container14";
+        width: 650px ;
+        height: 1500px ;
+        margin-left: auto;
+        margin-right: auto;
+        
+                         
+    }
+    @media screen and (width < 1140px){
+        #containers {
+            grid-template-areas: "container1 container1"
+                                 "container1 container1"
+                                 "container2 container3"
+                                 "container4 container5"
+                                 "container6 container6 "
+                                 "container7 container7"
+                                 "container8 container9"
+                                 "container10 container11"
+                                 "container12 container12"
+                                 "container13 container15"
+                                 "container14 container14";
+            width: 325px;
+            height: 1300px;
+            margin-left: auto;
+            margin-right: auto;
+                                                
+        }
+    @media screen and (width < 650px){
+            #containers {
+                grid-template-areas: "container1"
+                                     "container2"
+                                     "container3"
+                                     "container4"
+                                     "container5"
+                                     "container6"
+                                     "container7"
+                                     "container8"
+                                     "container9"
+                                     "container10"
+                                     "container11"
+                                     "container12"
+                                     "container13"
+                                     "container14"
+                                     "container15";
+                
+                width: 200px;
+                height: 2000px;
+                margin-right: 50px;
+                margin-left: auto;
+                margin-right: auto;
+                                 
+            }
+    }
+}}
